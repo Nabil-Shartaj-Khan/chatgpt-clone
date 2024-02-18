@@ -1,4 +1,4 @@
-Chatgpt clone (not the design) using React.js and bootstrap
+Chatgpt clone (not the design) using open ai api key. Used React.js and bootstrap
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
