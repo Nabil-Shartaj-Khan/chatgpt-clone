@@ -4,7 +4,6 @@ const ShowMessage = ({ allMessage, isTyping }) => {
   const chatContainerRef = useRef(null);
 
   useEffect(() => {
-    // Scroll to bottom when messages update
     chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
   }, [allMessage]);
 

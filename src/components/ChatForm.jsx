@@ -12,10 +12,13 @@ const ChatForm = ({ input, setInput, responseGenerate }) => {
   };
 
   const handleButtonClick = () => {
-    responseGenerate(input);
-    setInput("");
+    if (input.trim() !== "") {
+      responseGenerate(input);
+      setInput("");
+    } else {
+      alert("Come on! Atleast write something 🤨😕");
+    }
   };
-
   return (
     <div className="text-center">
       <div className="text-area">
@@ -28,6 +31,7 @@ const ChatForm = ({ input, setInput, responseGenerate }) => {
           placeholder="ask me anything"
           value={input}
           onChange={(e) => setInput(e.target.value)}
+          required
         ></textarea>
       </div>
       <div>
