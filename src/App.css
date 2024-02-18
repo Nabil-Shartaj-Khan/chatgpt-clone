@@ -1,0 +1,54 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  body{
+    background-color: #2f2f2f;
+    font-size: 15px;
+  }
+  
+  .content-container {
+    flex: 1;
+    display: flex;
+  }
+  
+  .left-panel {
+    flex-basis: 10%;
+    padding: 10px;
+    background-color: #2f2f2f;
+
+  }
+  
+  .right-panel {
+    flex: 1;
+    padding: 20px;
+    color: white;
+    position: relative;
+    overflow-y: auto; 
+  }
+  
+  .show-message-container {
+    margin-bottom: 20px;
+    padding-top: 40px;
+  }
+  
+  .chat-form-container {
+    position: sticky; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #2f2f2f;
+    z-index: 1; 
+  }
+  
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px; 
+    background-color: #2f2f2f;
+    color: white;
+  }
+  
